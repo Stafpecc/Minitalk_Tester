@@ -10,7 +10,7 @@ Here’s the project’s file structure:
 
 ├── .github/  
 │   └── workflows/  
-│       └── ci.yml  
+│           └── ci.yml  
 ├── exec/  
 │   ├── client  
 │   └── server  
