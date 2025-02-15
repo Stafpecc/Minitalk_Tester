@@ -1,0 +1,38 @@
+name: Minitalk CI Pipeline
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: |
+          sudo apt update
+          sudo apt install build-essential valgrind
+
+      - name: Build
+        run: |
+          make
+
+      - name: Run Valgrind
+        run: |
+          chmod 0777 ./tests/valgrind_tests.sh
+          ./tests/valgrind_tests.sh
+
+      - name: Run all tests
+        run: |
+          chmod 0777 ./tests/tests.sh
+          ./tests/tests.sh
+
+

@@ -40,16 +40,24 @@ Ensure you have the following installed:
 1. Clone this repository:
 
     ```bash
-    git clone https://github.com/your-username/minitalk.git && cd minitalk
+    git clone https://github.com/Stafpecc/Minitalk_Tester.git minitalk && cd minitalk
     ```
 
-2. Compile the executables `client` and `server`:
+2. Create an empty dir 'exec' 
+
+    ```bash
+    mkdir exec
+    ```
+
+4. Copy your code into minitalk, create a Malefile rule that compiles your cfiles into exec
+
+5. Compile the executables `client` and `server`:
 
     ```bash
     make
     ```
 
-3. After compilation, you should have the `client` and `server` executables inside the `exec/` directory.
+6. After compilation, you should have the `client` and `server` executables inside the `exec/` directory.
 
 ## Running Tests
 
