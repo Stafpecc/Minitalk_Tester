@@ -77,8 +77,6 @@ Run the `valgrind_tests.sh` script to check the project’s memory management:
 ---
 
 ### Explanation:
-
-- **`README.md`**: This file provides an overview of the project, explaining the file structure, the build process, testing, and CI setup.
   
 - **`tests` folder**: Contains scripts for unit tests (`tests.sh`), memory management tests using Valgrind (`valgrind_tests.sh`), very big test `bible.sh` and setup file bible test `bible.txt`.
 
