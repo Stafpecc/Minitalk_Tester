@@ -57,7 +57,7 @@ Ensure you have the following installed:
 Unit tests are located in the `tests/` directory. You can run them using the following scripts:
 
 - **`tests.sh`**: Basic client-server communication tests. (Execution time: < 1 min)
-- **`bible.sh`**: A very large test. (Execution time: long)
+- **`bible.sh`**: A very very very very very very large test. (Execution time: long)
 
 To run the tests, use:
 
