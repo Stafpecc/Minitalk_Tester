@@ -6,8 +6,8 @@ Minitalk is a C project that implements communication between a client and a ser
 
 Here’s the project’s file structure:
 
-
 .
+
 ├── .github/  
 │   └── workflows/  
 │       └── ci.yml  
