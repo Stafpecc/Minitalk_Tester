@@ -8,20 +8,20 @@ Here’s the project’s file structure:
 
 .
 
-├── .github/  
-│   └── workflows/  
-│           └── ci.yml  
-├── exec/  
-│   ├── client  
-│   └── server  
-├── tests/  
-│   ├── bible.sh  
-│   ├── bible.txt  
-│   ├── tests.sh  
-│   └── valgrind_tests.sh  
-├── Makefile  
-├── src  
-├── README.md  
+├── .github/
+│   └── workflows/
+│       └── ci.yml
+├── exec/
+│   ├── client
+│   └── server
+├── tests/
+│   ├── bible.sh
+│   ├── bible.txt
+│   ├── tests.sh
+│   └── valgrind_tests.sh
+├── Makefile
+├── src
+├── README.md
 
 
 ## Installation and Compilation
