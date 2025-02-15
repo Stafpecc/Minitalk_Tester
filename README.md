@@ -23,12 +23,15 @@ Here’s the project’s file structure:
 ├── README.md
 
 
+
 ## Installation and Compilation
 
 ### Prerequisites
 
+Ensure you have the following installed:
+
 - A UNIX-based environment (Linux/macOS)
-- `gcc` compiler
+- `gcc` or `cc` compiler
 - `make` for build management
 
 ### Installation Steps
@@ -36,8 +39,7 @@ Here’s the project’s file structure:
 1. Clone this repository:
 
     ```bash
-    git clone https://github.com/your-username/minitalk.git
-    cd minitalk
+    git clone https://github.com/your-username/minitalk.git && cd minitalk
     ```
 
 2. Compile the executables `client` and `server`:
@@ -54,8 +56,15 @@ Here’s the project’s file structure:
 
 Unit tests are located in the `tests/` directory. You can run them using the following scripts:
 
-- **`tests.sh`**: Basic client-server communication tests.
-- **`valgrind_tests.sh`**: Valgrind memory management tests to check for leaks.
+- **`tests.sh`**: Basic client-server communication tests. (Execution time: < 1 min)
+- **`bible.sh`**: A very large test. (Execution time: long)
+
+To run the tests, use:
+
+```bash
+./tests/tests.sh
+./tests/bible.sh
+```
 
 ### Running Valgrind Tests
 
@@ -63,6 +72,7 @@ Run the `valgrind_tests.sh` script to check the project’s memory management:
 
 ```bash
 ./tests/valgrind_tests.sh
+```
 
 ---
 
@@ -70,7 +80,7 @@ Run the `valgrind_tests.sh` script to check the project’s memory management:
 
 - **`README.md`**: This file provides an overview of the project, explaining the file structure, the build process, testing, and CI setup.
   
-- **`tests` folder**: Contains scripts for unit tests (`tests.sh`), memory management tests using Valgrind (`valgrind_tests.sh`), and setup files like `bible.sh` and `bible.txt`.
+- **`tests` folder**: Contains scripts for unit tests (`tests.sh`), memory management tests using Valgrind (`valgrind_tests.sh`), very big test `bible.sh` and setup file bible test `bible.txt`.
 
 - **`ci.yml`**: The GitHub Actions CI configuration file that automates compilation and test execution upon each push to the `main` branch.
 
